@@ -1,3 +1,0 @@
-getsnip.io
-
-test
