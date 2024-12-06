@@ -14,7 +14,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "simplicity",
-  projectName: "snip.github.io",
+  projectName: "getsnip.github.io",
   deploymentBranch: "gh-pages",
 
   // Even if you don't use internalization, you can use this field to set useful
