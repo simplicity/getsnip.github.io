@@ -83,24 +83,7 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Snip",
-          items: [
-            {
-              label: "Features",
-              to: "/docs/features",
-            },
-            {
-              label: "Contact",
-              to: "/contact",
-            },
-            {
-              label: "About",
-              to: "/about",
-            },
-          ],
-        },
-        {
-          title: "Community",
+          title: "Links",
           items: [
             {
               label: "GitHub",
@@ -109,19 +92,6 @@ const config: Config = {
             {
               label: "Bluesky",
               href: "https://bsky.app/profile/getsnip.io",
-            },
-          ],
-        },
-        {
-          title: "Legal",
-          items: [
-            {
-              label: "Privacy Statement",
-              href: "/privacy",
-            },
-            {
-              label: "Terms",
-              href: "/terms",
             },
           ],
         },
