@@ -106,6 +106,10 @@ const config: Config = {
               label: "GitHub",
               href: "https://github.com/simplicity/snip/discussions",
             },
+            {
+              label: "Bluesky",
+              href: "https://bsky.app/profile/getsnip.io",
+            },
           ],
         },
         {
