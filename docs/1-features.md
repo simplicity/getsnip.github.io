@@ -10,34 +10,17 @@ import DocVideo from '@site/src/components/DocVideo/DocVideo';
 
 Note-Taking is a relatively simple process. Most of the time, you just want to write down some thoughts or a todo or take a note of something you know will be useful in the future. Notes are often ephemeral: you need them in a particular moment and discard them soon thereafter.
 
-Snip focuses on keeping this simple process simple, while providing useful features. It provides a super-slick, completely decluttered user interface with only a handful of controls, giving you a distraction free experience when working with notes. It does not require you to have an account. Instead, it is backend agnostic and lets you decide where you want your notes to be backed up.
+Snip focuses on keeping this simple process simple, while providing useful features. It provides a super-slick, completely decluttered user interface with only a handful of controls, giving you a distraction free experience when working with notes.
 
 ## Regarding Markdown
 
-Snip is not a markdown-based note taking app, but it does have markdown-related
-functionality:
-
-- you can use markdown syntax while writing rich text notes
-- you can import markdown
-- you can export to markdown
-
-We do not deem the use of markdown for taking notes
-necessary. With a good rich text editor, notes are equally easy (if not easier)
-to edit and read, and export to markdown removes the possibility of
-vendor lock-in: your data will be future-proof as in any other markdown based
-note taking app.
-
-Not using markdown also comes with the advantage that documents can contain more
-complex elements and formatting than a regular markdown document would. Once you
-want to introduce additional concepts (for
-example, a reminder feature as it is implemented in Snip), you'll have to introduce
-your own, custom syntax, ultimately breaking the original idea of using a
-common standard. Even worse, if such custom standards are introduced through
-a community driven platform, you end up with notes that contain structures that
-are only valid within the respective note taking app and with additional plugins
-installed.
+Snip is not a markdown-based note taking app.
+Using markdown for taking notes is quite common in other note taking apps. Snip intentionally does not follow that trend. The main reason is that users will still want to have a rich-text-editor-like experience. Markdown is really just the format in which a note is stored, but in which it is presented and edited.
+Please note that it is still possible to _export_ a rich-text-note to markdown. Snip does not yet have export to markdown, but this functionality is coming very soon.
 
 ## Origins
+
+You don't need an account to store your data. Snip is designed to allow users to pick the destination to which their data is syned. This is done with origins.
 
 Origins allow you to specificy how your data shall be persisted. Currently,
 there's two origins available:
@@ -47,6 +30,8 @@ there's two origins available:
 
 The advantage of the github origin is that you'll be able to sync your data
 across multiple devices without any costs. Apart from that, the functionality of the application remains the same.
+
+There's plans to introduce other origins, such as a dropbox origin, which would allow you to sync your data to your dropbox account.
 
 ## Editing Rich Text
 
@@ -118,17 +103,27 @@ becomes draggable and can be dragged accordingly.
 
 <DocVideo name="drag-n-drop-via-node-selection" />
 
-## Snippet References
+## Organizing Notes
 
-As the name suggests, snippet references enable you to reference snippets from
-one another. There's multiple ways how to set up snippet references:
+### With folders
 
-- using the toolbar: there's a toolbar entry called "Create Snippet References",
-  which allows you to search for the snippet you'd like to reference
+You can create folders in the folder sidebar to group notes. You can nest folders and define icons.
+
+### Through Pinning
+
+You can pin a note to the folder sidebar. You do that by right-clicking the note, then entering a path to which you want to pin it. For example, using the path "Private / Todos" will make the folder sidebar show a folder structure "Private > Todos". Clicking on "Todos" will then show the pinned note.
+
+Once you're on a pinned note, you can use the "Cmd+N" shortcut to create a new note and auto-link it to the pinned note.
+
+## Note References
+
+As the name suggests, note references enable you to reference notes from
+one another. Set up note references as follows:
+
 - using autocomplete: type `/` inside a note and start typing some text. You'll
   be presented with an autocomplete. If the text you type matches an already
-  existing snippet, it will be presented as an option. In addition, you'll have
-  the option to create a new snippet and auto-reference it into the snippet you're
+  existing note, it will be presented as an option. In addition, you'll have
+  the option to create a new note and auto-reference it into the note you're
   editing.
 
 <DocVideo name="snippet-references" />
@@ -136,12 +131,12 @@ one another. There's multiple ways how to set up snippet references:
 ## Search and Quick Access
 
 Snip comes with an effective search-all feature, which you can use to search
-your snippets. It presents results in a compact, easy-to-read manner. You can use
+your notes. It presents results in a compact, easy-to-read manner. You can use
 [regular expressions](https://en.wikipedia.org/wiki/Regular_expression) if you
 like.
 
 It also allows you to search for and jump to tags. Additionally, it shows you
-snippets and tags you've visited recently.
+notes and folders you've visited recently.
 
 The Quick Access feature allows you to quickly copy links and code blocks from
 your notes to the clipboard.
