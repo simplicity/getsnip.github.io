@@ -15,7 +15,7 @@ Snip focuses on keeping this simple process simple, while providing useful featu
 ## Regarding Markdown
 
 Snip is not a markdown-based note taking app.
-Using markdown for taking notes is quite common in other note taking apps. Snip intentionally does not follow that trend. The main reason is that users will still want to have a rich-text-editor-like experience. Markdown is really just the format in which a note is stored, but in which it is presented and edited.
+Using markdown for taking notes is quite common in other note taking apps. Snip intentionally does not follow that trend. The main reason is that users will still want to have a rich-text-editor-like experience. Markdown is really just the format in which a note is stored. For presenting and editing the content, we usually want a more sophisticated interface.
 Please note that it is still possible to _export_ a rich-text-note to markdown. Snip does not yet have export to markdown, but this functionality is coming very soon.
 
 ## Origins
