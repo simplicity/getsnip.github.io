@@ -18,7 +18,7 @@ const StyledMain = styled.main`
   }
 `;
 
-export default function Home(): JSX.Element {
+export default function Home() {
   const ref = useRef<HTMLElement | null>(null);
 
   const dimensions = useDimensions(ref);

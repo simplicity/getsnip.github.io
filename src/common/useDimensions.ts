@@ -33,7 +33,7 @@ function extractAndSet(
 }
 
 export function useDimensions<T extends HTMLElement>(
-  ref: RefObject<T> | undefined,
+  ref: RefObject<T | null> | undefined,
   // This can be useful when the measured element is being animated initially
   // (e.g. a modal which scales from 0 to 1).
   options: {
