@@ -30,4 +30,5 @@ jobs:
           GIT_USER_NAME: ${{ vars.GIT_USER_NAME }}
           GIT_USER_EMAIL: ${{ vars.GIT_USER_EMAIL }}
           GIT_USER: ${{ secrets.GIT_USER }}
+          GIT_PASS: ${{ secrets.GIT_PASS }}
         run: pnpm run deploy
